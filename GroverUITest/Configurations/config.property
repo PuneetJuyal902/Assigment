@@ -1,0 +1,9 @@
+                       ***************URL*******************
+                          
+APP_URL=https://www.imdb.com
+ 
+ 
+  
+              *************EXTENT-REPORT-PATH*****************
+              
+EXTENT_CONFIG_PATH=//test-output//extent-config.xml

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MultipleSuite">
+
+
+	<test name="Test1" preserve-order="true">
+		<classes>
+			<class name="testCases.Tc_01_verify_if_user_able_to_to_get_at_atleast_one_movie_from_top_twoFifty_and_sorting_work_as_expected"/>
+			<parameter name="Browser" value="Chrome" />
+		
+		</classes>
+	</test>
+	
+	
+		<test name="Test2" preserve-order="true">
+		<classes>
+			<class name="testCases.Tc_02_verify_if_sorting_working_as_expected_under_western_genre"/>
+			<parameter name="Browser" value="Chrome" />
+		
+		</classes>
+	</test>
+	
+	
+	</suite>
+	

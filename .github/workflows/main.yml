@@ -15,10 +15,8 @@ jobs:
        java-version: 11
        
     - name: Go to path
-      run: cd GroverUITest && ls -la
+      run: cd GroverUITest && mvn test
       
-    
-    - name: run maven test
-      run: mvn test
+  
       
       

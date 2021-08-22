@@ -1,4 +1,4 @@
-Process Mining
+Assigment
 This repository holds the code for assgiment of grover test written in java framework is designed using multimodular framework apporach and test can be run via git hub actions as CI integration 
 
 

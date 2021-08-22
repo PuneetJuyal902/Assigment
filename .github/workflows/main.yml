@@ -14,7 +14,10 @@ jobs:
       with:
        java-version: 11
        
-    - name: Go to path
+    - name: run core
+      run: cd core && mvn clean && mvn clean && mvn install
+      
+    - name: run UI test
       run: cd GroverUITest && mvn clean && mvn clean && mvn install
        
   

@@ -1,6 +1,7 @@
 package coreFramework.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;	
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,6 +30,21 @@ public class LocalBrowserInitialzation {
 			case "IE":
 				WebDriverManager.iedriver().setup();
 				driver = new InternetExplorerDriver();
+				driver.get(url);
+				driver.manage().window().maximize();
+				
+				break;
+				
+			case "HeadLessChrome":
+				WebDriverManager.chromedriver().setup();
+				ChromeOptions chromeOptions= new ChromeOptions();
+				chromeOptions.addArguments("--headless");
+				chromeOptions.addArguments("--window-size=1440, 900");
+				chromeOptions.addArguments("--disable-gpu");
+				chromeOptions.addArguments("--no-sandbox");
+				chromeOptions.addArguments("--allow-insecure-localhost");
+				driver = new ChromeDriver(chromeOptions);
+				
 				driver.get(url);
 				driver.manage().window().maximize();
 				

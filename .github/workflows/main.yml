@@ -14,5 +14,5 @@ jobs:
       with:
        java-version: 11
        
-    name: build with maven
-    run: mvn test
+    - name: build with maven
+      run: mvn test

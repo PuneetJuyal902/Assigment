@@ -15,10 +15,10 @@ jobs:
        java-version: 11
        
     - name: run core
-      run: cd core && mvn clean && mvn clean && mvn install
+      run: cd core && mvn clean && mvn install
       
     - name: run UI test
-      run: cd GroverUITest && mvn clean && mvn clean && mvn install
+      run: cd GroverUITest &&  mvn clean && mvn install
        
   
       
